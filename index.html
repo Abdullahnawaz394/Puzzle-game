@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Puzzle Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #ff7b00;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #ff9500;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid white;
+    }
+    
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .puzzle-icon {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    
+    .feature {
+      flex: 1;
+      min-width: 200px;
+      margin: 1rem;
+      padding: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    
+    .feature h3 {
+      margin-top: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem;
+        margin: 0 1rem;
+      }
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      .feature {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="puzzle-icon">🧩</div>
+    <h1>Welcome to Puzzle Game</h1>
+    <p>Challenge your mind with our collection of brain-teasing puzzles designed to test your logic, creativity, and problem-solving skills.</p>
+    
+    <div class="features">
+      <div class="feature">
+        <h3>Multiple Levels</h3>
+        <p>From beginner to expert, find the perfect challenge for your skill level.</p>
+      </div>
+      <div class="feature">
+        <h3>Various Puzzle Types</h3>
+        <p>Enjoy logic puzzles, word games, visual challenges, and more!</p>
+      </div>
+      <div class="feature">
+        <h3>Track Progress</h3>
+        <p>Save your scores and monitor your improvement over time.</p>
+      </div>
+    </div>
+    
+    <div>
+      <button class="btn">Start Playing</button>
+      <button class="btn btn-secondary">How to Play</button>
+    </div>
+  </div>
+</body>
+  </html>
